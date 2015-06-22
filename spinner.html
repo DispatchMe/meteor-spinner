@@ -1,0 +1,26 @@
+<template name="spinner">
+  {{#if visible}}
+    {{#if $eq type 'wave'}}{{> waveSpinner}}{{/if}}
+    {{#if $eq type 'pulse'}}{{> pulseSpinner}}{{/if}}
+  {{else}}
+    {{> Template.contentBlock}}
+  {{/if}}
+</template>
+
+<template name="waveSpinner">
+  <div class="{{class}} spinner--wave">
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+  </div>
+</template>
+
+<template name="pulseSpinner">
+  <div class="{{class}} spinner--pulse">
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+  </div>
+</template>

@@ -1,0 +1,26 @@
+<head>
+  <title>dispatch:spinner</title>
+</head>
+
+<body>
+  {{> exampleWave}}
+  <br>
+  <br>
+  {{> examplePulse}}
+</body>
+
+<template name="exampleWave">
+  <button class="example-button">
+    {{#spinner type='wave' visible=isLoading class='example-spinner'}}
+      <span>Click Me!</span>
+    {{/spinner}}
+  </button>
+</template>
+
+<template name="examplePulse">
+  <button class="example-button">
+    {{#spinner type='pulse' visible=isLoading class='example-spinner'}}
+      <span>Click Me!</span>
+    {{/spinner}}
+  </button>
+</template>
