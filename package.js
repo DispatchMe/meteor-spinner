@@ -10,7 +10,7 @@ Package.onUse(function (api) {
     'templating@1.1.1',
 
     // atmosphere
-    'raix:handlebar-helpers'
+    'raix:handlebar-helpers@0.2.4'
   ], 'web');
 
   api.addFiles([

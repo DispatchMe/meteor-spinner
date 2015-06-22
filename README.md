@@ -1,7 +1,7 @@
 Meteor Spinner
 ==============
 
-'A spinner component for displaying loading with meteor.'
+A spinner component for displaying loading with meteor.
 
 ##Usage
 `meteor add dispatch:spinner`
