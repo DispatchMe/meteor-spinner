@@ -1,9 +1,20 @@
 <template name="spinner">
-  {{#if visible}}
-    {{#if $eq type 'wave'}}{{> waveSpinner}}{{/if}}
-    {{#if $eq type 'pulse'}}{{> pulseSpinner}}{{/if}}
+  {{#if fitToText}}
+    <span class="{{textClass}} {{#if visible}}u-transparent{{/if}}">{{> Template.contentBlock}}</span>
+
+    {{#if visible}}
+      {{#if $eq type 'wave'}}{{> waveSpinner}}{{/if}}
+      {{#if $eq type 'pulse'}}{{> pulseSpinner}}{{/if}}
+    {{/if}}
+
   {{else}}
-    {{> Template.contentBlock}}
+
+    {{#if visible}}
+      {{#if $eq type 'wave'}}{{> waveSpinner}}{{/if}}
+      {{#if $eq type 'pulse'}}{{> pulseSpinner}}{{/if}}
+    {{else}}
+      {{> Template.contentBlock}}
+    {{/if}}
   {{/if}}
 </template>
 
