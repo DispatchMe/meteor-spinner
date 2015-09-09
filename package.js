@@ -1,6 +1,6 @@
 Package.describe({
   name: 'dispatch:spinner',
-  version: '0.0.3',
+  version: '0.0.4',
   summary: 'Spinner component for displaying loading with blaze.'
 });
 
