@@ -1,6 +1,6 @@
 <template name="spinner">
   {{#if fitToText}}
-    <span class="{{textClass}} {{#if visible}}u-transparent{{/if}}">{{> Template.contentBlock}}</span>
+    <div class="{{textClass}} {{#if visible}}u-transparent{{/if}}">{{> Template.contentBlock}}</div>
 
     {{#if visible}}
       {{#if $eq type 'wave'}}{{> waveSpinner}}{{/if}}
